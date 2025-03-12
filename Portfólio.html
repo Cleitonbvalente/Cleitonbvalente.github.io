@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Tags para SEO -->
+    <meta name="description" content="Portfólio de Cleiton Barbosa Valente, estudante de Ciência da Computação e apaixonado por tecnologia.">
+    <meta name="keywords" content="portfolio, ciência da computação, análise de dados, suporte técnico, design ux, gerenciamento de projetos">
+    <meta name="author" content="Cleiton Barbosa Valente">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- FIM BOOTSTRAP ICONS-->
     <link rel="stylesheet" href="style.css">
-    <title>Portfólio</title>
+    <title>Portfólio de Cleiton</title>
 </head>
 <body>
     <!-- CABEÇALHO -->
@@ -20,7 +24,7 @@
         <div class="interface">
             <div class="logo">
                 <a href="#">
-                    <img src="Nome.png" alt="Portfólio de Cleiton" width="150px">
+                    <img src="Nome.png" alt="Logotipo do Portfólio de Cleiton" width="150px">
                 </a>
             </div> <!--logo-->
 
@@ -34,8 +38,8 @@
             </nav>
 
             <div class="btn-contato">
-                <a href="#">
-                    <button>Contato</button>
+                <a href="mailto:cleiton@example.com">
+                    <button aria-label="Entre em contato">Contato</button>
                 </a>
             </div>
         </div>
@@ -53,8 +57,8 @@
                         <p>Sou apaixonado por tecnologia e inovação. Busco constantemente aprender e aplicar meus conhecimentos para resolver problemas complexos e criar soluções que impactem positivamente a sociedade.</p>
 
                         <div class="btn-contato">
-                            <a href="#">
-                                <button>Entre em contato</button>
+                            <a href="mailto:cleiton@example.com">
+                                <button aria-label="Entre em contato">Entre em contato</button>
                             </a>
                         </div>
                     </div><!--txt-topo-site-->
@@ -122,8 +126,8 @@
                             Meu objetivo é continuar aprendendo e crescendo, contribuindo para projetos desafiadores e inovadores que transformem ideias em realidade. Se você está em busca de um profissional dedicado, criativo e apaixonado por tecnologia, vamos conversar!
                         </p>
                         <div class="btn-contato">
-                            <a href="#">
-                                <button>Entre em contato</button>
+                            <a href="mailto:cleiton@example.com">
+                                <button aria-label="Entre em contato">Entre em contato</button>
                             </a>
                         </div>
                     </div><!--txt-sobre-->
@@ -135,6 +139,7 @@
             </div><!--interface-->
         </section><!--sobre-->
 
+        <!-- PROJETOS -->
         <section id="projetos" class="projetos">
             <div class="interface">
                 <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
@@ -166,5 +171,22 @@
             </div><!--interface-->
         </section><!--projetos-->
     </main>
+
+    <!-- Botão "Voltar ao Topo" -->
+    <a href="#" class="btn-topo" title="Voltar ao topo">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Script para o Botão "Voltar ao Topo" -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const btnTopo = document.querySelector('.btn-topo');
+            if (window.scrollY > 300) {
+                btnTopo.classList.add('visible');
+            } else {
+                btnTopo.classList.remove('visible');
+            }
+        });
+    </script>
 </body>
 </html>
