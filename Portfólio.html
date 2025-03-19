@@ -7,6 +7,11 @@
     <meta name="description" content="Portfólio de Cleiton Barbosa Valente, estudante de Ciência da Computação e apaixonado por tecnologia.">
     <meta name="keywords" content="portfolio, ciência da computação, análise de dados, suporte técnico, design ux, gerenciamento de projetos">
     <meta name="author" content="Cleiton Barbosa Valente">
+    <!-- Meta Tags para Redes Sociais -->
+    <meta property="og:title" content="Portfólio de Cleiton Barbosa Valente">
+    <meta property="og:description" content="Estudante de Ciência da Computação e apaixonado por tecnologia.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Cleitonbvalente/Portfolio/main/Design%20sem%20nome.png">
+    <meta property="og:url" content="https://cleitonbvalente.github.io/Portfolio/">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,11 +39,12 @@
                     <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato">
-                <a href="mailto:cleiton@example.com">
+                <a href="mailto:Cleiton4792bar@gmail.com">
                     <button aria-label="Entre em contato">Contato</button>
                 </a>
             </div>
@@ -56,8 +62,21 @@
                         <h1><span>Estudante de Ciência da Computação</span></h1>
                         <p>Sou apaixonado por tecnologia e inovação. Busco constantemente aprender e aplicar meus conhecimentos para resolver problemas complexos e criar soluções que impactem positivamente a sociedade.</p>
 
+                        <!-- Ícones das Tecnologias -->
+                        <div class="tecnologias">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" title="C">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" title="Python">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="Swift" title="Swift">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML" title="HTML">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS" title="CSS">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="SQL" title="SQL">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/r/r-original.svg" alt="R" title="R">
+                        </div>
+
+                        <!-- Botão "Entre em contato" -->
                         <div class="btn-contato">
-                            <a href="mailto:cleiton@example.com">
+                            <a href="mailto:Cleiton4792bar@gmail.com">
                                 <button aria-label="Entre em contato">Entre em contato</button>
                             </a>
                         </div>
@@ -126,7 +145,7 @@
                             Meu objetivo é continuar aprendendo e crescendo, contribuindo para projetos desafiadores e inovadores que transformem ideias em realidade. Se você está em busca de um profissional dedicado, criativo e apaixonado por tecnologia, vamos conversar!
                         </p>
                         <div class="btn-contato">
-                            <a href="mailto:cleiton@example.com">
+                            <a href="mailto:Cleiton4792bar@gmail.com">
                                 <button aria-label="Entre em contato">Entre em contato</button>
                             </a>
                         </div>
@@ -170,6 +189,55 @@
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--projetos-->
+
+        <!-- SEÇÃO DE CONTATO -->
+        <section id="contato" class="contato">
+            <div class="interface">
+                <h2 class="titulo" style="margin-bottom: 40px;">ENTRE EM <span>CONTATO.</span></h2>
+                <div class="flex">
+                    <div class="contato-info">
+                        <h3>Informações de Contato</h3>
+                        <p>Estou disponível para colaborar em projetos interessantes. Sinta-se à vontade para entrar em contato comigo por e-mail ou através das minhas redes sociais.</p>
+                        <ul>
+                            <li>
+                                <a href="mailto:Cleiton4792bar@gmail.com">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gmail/gmail-original.svg" alt="E-mail" width="24px">
+                                    E-mail: Cleiton4792bar@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/cleitonbvalente" target="_blank">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="24px">
+                                    LinkedIn: cleitonbvalente
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Cleitonbvalente" target="_blank">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="GitHub" width="24px">
+                                    GitHub: Cleitonbvalente
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://gitlab.com/Cleitonbvalente" target="_blank">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab" width="24px">
+                                    GitLab: Cleitonbvalente
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--contato-info-->
+
+                    <div class="form-contato">
+                        <h3>Envie uma Mensagem</h3>
+                        <form action="#" method="post">
+                            <input type="text" name="nome" placeholder="Seu nome" required>
+                            <input type="email" name="email" placeholder="Seu e-mail" required>
+                            <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+                            <button type="submit" aria-label="Enviar mensagem">Enviar</button>
+                        </form>
+                    </div><!--form-contato-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--contato-->
     </main>
 
     <!-- Botão "Voltar ao Topo" -->

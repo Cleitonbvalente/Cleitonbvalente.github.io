@@ -114,6 +114,23 @@ section.topo-do-site .flex {
     margin: 28px 0;
 }
 
+/* Ícones das Tecnologias */
+.tecnologias {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.tecnologias img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.tecnologias img:hover {
+    transform: scale(1.2);
+}
+
 .topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
@@ -151,8 +168,8 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 .especialidades .especialidades-box i {
@@ -216,29 +233,29 @@ section.projetos .flex {
     gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px; /* Espaço entre o título e os projetos */
+    margin-top: 20px;
 }
 
 .projeto-box {
     background-color: #1e1e1e;
     border-radius: 20px;
-    padding: 20px; /* Reduzi o padding para diminuir o tamanho do cartão */
+    padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     flex: 1 1 calc(50% - 40px);
-    max-width: 400px; /* Reduzi a largura máxima do cartão */
+    max-width: 400px;
     box-sizing: border-box;
-    margin-top: 20px; /* Espaço entre o título e a imagem */
+    margin-top: 20px;
 }
 
 .projeto-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(36, 177, 165, 0.5);
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(36, 177, 165, 0.3);
 }
 
 .projeto-box .img-projeto img {
     width: 100%;
     border-radius: 15px;
-    margin-top: 20px; /* Espaço entre o título do projeto e a imagem */
+    margin-top: 20px;
 }
 
 .projeto-box .txt-projeto {
@@ -275,6 +292,118 @@ section.projetos .flex {
 }
 
 .projeto-box .btn-projeto button:hover {
+    background-color: var(--cor-destaque);
+    transform: scale(1.05);
+}
+
+/* ESTILO DA SEÇÃO DE CONTATO */
+section.contato {
+    padding: 40px 4%;
+    background-color: #111;
+}
+
+section.contato h2.titulo {
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+
+section.contato .flex {
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.contato-info {
+    flex: 1;
+}
+
+.contato-info h3 {
+    color: var(--cor-secundaria);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contato-info p {
+    color: var(--cor-secundaria);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contato-info ul {
+    list-style-type: none;
+}
+
+.contato-info ul li {
+    margin-bottom: 15px;
+}
+
+.contato-info ul li a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Alinha ícone e texto verticalmente */
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    transition: color 0.3s ease;
+}
+
+.contato-info ul li a:hover {
+    color: var(--cor-primaria);
+}
+
+.contato-info ul li img {
+    width: 24px;
+    height: 24px;
+}
+
+.form-contato {
+    flex: 1;
+}
+
+.form-contato h3 {
+    color: var(--cor-secundaria);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 10px;
+    font-size: 16px;
+    color: var(--cor-secundaria);
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+    border-color: var(--cor-primaria);
+}
+
+.form-contato textarea {
+    resize: vertical;
+}
+
+.form-contato button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    background-color: var(--cor-primaria);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-contato button:hover {
     background-color: var(--cor-destaque);
     transform: scale(1.05);
 }
@@ -338,5 +467,9 @@ section.projetos .flex {
     .projeto-box {
         flex: 1 1 100%;
         max-width: 100%;
+    }
+
+    section.contato .flex {
+        flex-direction: column;
     }
 }
