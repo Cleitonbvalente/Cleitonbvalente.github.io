@@ -78,13 +78,33 @@ header a:hover {
     transform: scale(1.05);
 }
 
-header nav ul {
+header nav.menu-desktop ul {
+    display: flex;
+    gap: 20px;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-header nav ul li {
+header nav.menu-desktop ul li {
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 10px;
+}
+
+header nav.menu-desktop ul li a {
+    color: #4d4a4a;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav.menu-desktop ul li a:hover {
+    color: var(--cor-primaria);
+    transform: scale(1.05);
+}
+
+header .btn-contato {
+    margin-left: auto;
 }
 
 /* ESTILO DO TOPO DO SITE */
@@ -118,7 +138,7 @@ section.topo-do-site .flex {
 .tecnologias {
     display: flex;
     gap: 15px;
-    margin: 20px 0;
+    margin: 20px 0 30px;
 }
 
 .tecnologias img {
@@ -223,6 +243,68 @@ section.sobre .btn-contato {
     margin-top: 30px;
 }
 
+/* ESTILO DA SEÇÃO FORMAÇÃO */
+section.formacao {
+    padding: 40px 4%;
+    background-color: #111;
+}
+
+section.formacao .formacao-categoria {
+    margin-bottom: 40px;
+}
+
+section.formacao h3 {
+    color: var(--cor-secundaria);
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section.formacao .flex {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formacao-box {
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(25% - 40px);
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.formacao-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(36, 177, 165, 0.3);
+}
+
+.formacao-box i {
+    font-size: 50px;
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+}
+
+.formacao-box h4 {
+    color: var(--cor-secundaria);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.formacao-box p {
+    color: var(--cor-secundaria);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.formacao-box p strong {
+    color: var(--cor-primaria);
+}
+
 /* ESTILO DA SEÇÃO DE PROJETOS */
 section.projetos {
     padding: 40px 4%;
@@ -303,7 +385,7 @@ section.contato {
 }
 
 section.contato h2.titulo {
-    margin-bottom: 40px; /* Espaçamento abaixo do título */
+    margin-bottom: 40px;
 }
 
 section.contato .flex {
@@ -340,8 +422,8 @@ section.contato .flex {
     color: var(--cor-secundaria);
     text-decoration: none;
     display: flex;
-    align-items: center; /* Alinha ícone e texto verticalmente */
-    gap: 10px; /* Espaço entre o ícone e o texto */
+    align-items: center;
+    gap: 10px;
     transition: color 0.3s ease;
 }
 
@@ -433,8 +515,18 @@ section.contato .flex {
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
-    header nav ul li {
-        padding: 0 20px;
+    header nav.menu-desktop {
+        display: none;
+    }
+
+    header .btn-contato {
+        display: none;
+    }
+
+    header .menu-mobile {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
     }
 
     section.topo-do-site .flex {
@@ -462,6 +554,11 @@ section.contato .flex {
 
     section.sobre .img-sobre img {
         max-width: 300px;
+    }
+
+    .formacao-box {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
     .projeto-box {
