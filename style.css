@@ -88,19 +88,21 @@ header nav.menu-desktop ul {
 
 header nav.menu-desktop ul li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 24px;
 }
 
+/* Alterações no Menu de Navegação */
 header nav.menu-desktop ul li a {
-    color: #4d4a4a;
+    color: #a0a0a0; /* Cinza mais claro */
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px; /* Tamanho da fonte aumentado */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 header nav.menu-desktop ul li a:hover {
-    color: var(--cor-primaria);
+    color: var(--cor-primaria); /* Cor ao passar o mouse */
     transform: scale(1.05);
+    border-bottom: 2px solid var(--cor-primaria); /* Sublinhado ao passar o mouse */
 }
 
 header .btn-contato {
@@ -382,19 +384,16 @@ section.projetos .flex {
 section.contato {
     padding: 40px 4%;
     background-color: #111;
+    text-align: center; /* Centraliza o conteúdo */
 }
 
 section.contato h2.titulo {
     margin-bottom: 40px;
 }
 
-section.contato .flex {
-    align-items: flex-start;
-    gap: 60px;
-}
-
 .contato-info {
-    flex: 1;
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o bloco de informações */
 }
 
 .contato-info h3 {
@@ -412,6 +411,7 @@ section.contato .flex {
 
 .contato-info ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .contato-info ul li {
@@ -423,6 +423,7 @@ section.contato .flex {
     text-decoration: none;
     display: flex;
     align-items: center;
+    justify-content: center; /* Centraliza os ícones e textos */
     gap: 10px;
     transition: color 0.3s ease;
 }
@@ -434,60 +435,6 @@ section.contato .flex {
 .contato-info ul li img {
     width: 24px;
     height: 24px;
-}
-
-.form-contato {
-    flex: 1;
-}
-
-.form-contato h3 {
-    color: var(--cor-secundaria);
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.form-contato form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.form-contato input,
-.form-contato textarea {
-    padding: 10px;
-    font-size: 16px;
-    color: var(--cor-secundaria);
-    background-color: #1e1e1e;
-    border: 1px solid #333;
-    border-radius: 5px;
-    outline: none;
-    transition: border-color 0.3s ease;
-}
-
-.form-contato input:focus,
-.form-contato textarea:focus {
-    border-color: var(--cor-primaria);
-}
-
-.form-contato textarea {
-    resize: vertical;
-}
-
-.form-contato button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: var(--cor-secundaria);
-    font-weight: 600;
-    background-color: var(--cor-primaria);
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.form-contato button:hover {
-    background-color: var(--cor-destaque);
-    transform: scale(1.05);
 }
 
 /* BOTÃO "VOLTAR AO TOPO" */
@@ -568,5 +515,94 @@ section.contato .flex {
 
     section.contato .flex {
         flex-direction: column;
+    }
+}
+/* Estilo da Seção de Detalhes do Projeto */
+.detalhes-projeto {
+    display: none; /* Oculta a seção inicialmente */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(36, 177, 165, 0.3);
+}
+
+.detalhes-projeto.visible {
+    display: block; /* Exibe a seção quando a classe "visible" é adicionada */
+}
+
+.detalhes-projeto h3 {
+    color: var(--cor-secundaria);
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.galeria-telas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modo-claro, .modo-escuro {
+    text-align: center;
+}
+
+.modo-claro h4, .modo-escuro h4 {
+    color: var(--cor-secundaria);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.imagens {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagens img {
+    width: 10%; /* Reduz o tamanho das imagens para 20% da largura do contêiner */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.imagens img:hover {
+    transform: scale(1.05);
+}
+
+.btn-repositorio {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-repositorio button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    background-color: var(--cor-primaria);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-repositorio button:hover {
+    background-color: var(--cor-destaque);
+    transform: scale(1.05);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .imagens img {
+        width: 30%; /* Aumenta o tamanho das imagens para 30% em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .imagens img {
+        width: 45%; /* Aumenta o tamanho das imagens para 45% em telas muito pequenas */
     }
 }

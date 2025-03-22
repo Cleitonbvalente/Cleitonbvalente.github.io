@@ -250,12 +250,50 @@
                                 O projeto está em desenvolvimento, estou animado para compartilhar mais novidades em breve!
                             </p>
                             <div class="btn-projeto">
-                                <a href="https://github.com/Cleitonbvalente/MyGreen_" target="_blank">
-                                    <button>Ver Repositório</button>
-                                </a>
+                                <button class="btn-ver-mais" aria-label="Ver mais sobre o projeto MyGreen">Ver mais</button>
                             </div>
                         </div>
                     </div><!--projeto-box-->
+
+                    <!-- Detalhes do Projeto MyGreen (inicialmente oculto) -->
+                    <div class="detalhes-projeto" id="detalhes-mygreen">
+                        <h3>Telas do MyGreen</h3>
+                        <div class="galeria-telas">
+                            <div class="modo-claro">
+                                <h4>Modo Claro</h4>
+                                <div class="imagens">
+                                    <img src="Home Modo claro.png" alt="Tela 1 do MyGreen no modo claro">
+                                    <img src="Meu jardim Modo claro (2).png" alt="Tela 2 do MyGreen no modo claro">
+                                    <img src="Plantas favoritas Modo claro (2).png" alt="Tela 3 do MyGreen no modo claro">
+                                    <img src="Detalhes de plantas Modo claro.png" alt="Tela 4 do MyGreen no modo claro">
+                                    <img src="Detalhes de plantas Modo claro (2).png" alt="Tela 5 do MyGreen no modo claro">
+                                    <img src="Regar planta Modo claro.png" alt="Tela 6 do MyGreen no modo claro">
+                                    <img src="Perfil Modo claro.png" alt="Tela 7 do MyGreen no modo claro">
+                                    <img src="Filtros Modo claro.png" alt="Tela 8 do MyGreen no modo claro">
+                                    <img src="Adicionar plantas Modo claro.png" alt="Tela 9 do MyGreen no modo claro">
+                                </div>
+                            </div>
+                            <div class="modo-escuro">
+                                <h4>Modo Escuro</h4>
+                                <div class="imagens">
+                                    <img src="Home Modo escuro.png" alt="Tela 1 do MyGreen no modo escuro">
+                                    <img src="Meu jardim Modo escuro.png" alt="Tela 2 do MyGreen no modo escuro">
+                                    <img src="Plantas favoritas Modo escuro.png" alt="Tela 3 do MyGreen no modo escuro">
+                                    <img src="Detalhes de plantas Modo escuro.png" alt="Tela 4 do MyGreen no modo escuro">
+                                    <img src="Detalhes de plantas Modo escuro (2).png" alt="Tela 5 do MyGreen no modo escuro">
+                                    <img src="Regar planta Modo escuro.png" alt="Tela 6 do MyGreen no modo escuro">
+                                    <img src="Adicionar plantas Modo escuro.png" alt="Tela 7 do MyGreen no modo escuro">
+                                    <img src="Meu jardim Modo escuro (2).png" alt="Tela 8 do MyGreen no modo escuro">
+                                    <img src="Plantas favoritas Modo escuro (2).png" alt="Tela 9 do MyGreen no modo escuro">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-repositorio">
+                            <a href="https://github.com/Cleitonbvalente/MyGreen_" target="_blank" rel="noopener noreferrer">
+                                <button aria-label="Ver repositório no GitHub">Ver repositório</button>
+                            </a>
+                        </div>
+                    </div><!--detalhes-projeto-->
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--projetos-->
@@ -278,42 +316,32 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/cleitonbvalente" target="_blank">
+                                <a href="https://www.linkedin.com/in/cleitonbvalente" target="_blank" rel="noopener noreferrer">
                                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="LinkedIn" title="LinkedIn" width="32px">
                                     cleitonbvalente
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/Cleitonbvalente" target="_blank">
+                                <a href="https://github.com/Cleitonbvalente" target="_blank" rel="noopener noreferrer">
                                     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" title="GitHub" width="32px">
                                     Cleitonbvalente
                                 </a>
                             </li>
                             <li>
-                                <a href="https://gitlab.com/Cleitonbvalente" target="_blank">
+                                <a href="https://gitlab.com/Cleitonbvalente" target="_blank" rel="noopener noreferrer">
                                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab" title="GitLab" width="32px">
                                     Cleitonbvalente
                                 </a>
                             </li>
                         </ul>
                     </div><!--contato-info-->
-
-                    <div class="form-contato">
-                        <h3>Envie uma Mensagem</h3>
-                        <form action="#" method="post">
-                            <input type="text" name="nome" placeholder="Seu nome" required>
-                            <input type="email" name="email" placeholder="Seu e-mail" required>
-                            <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
-                            <button type="submit" aria-label="Enviar mensagem">Enviar</button>
-                        </form>
-                    </div><!--form-contato-->
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--contato-->
     </main>
 
     <!-- Botão "Voltar ao Topo" -->
-    <a href="#" class="btn-topo" title="Voltar ao topo">
+    <a href="#" class="btn-topo" title="Voltar ao topo" aria-label="Voltar ao topo">
         <i class="bi bi-arrow-up"></i>
     </a>
 
@@ -325,6 +353,20 @@
                 btnTopo.classList.add('visible');
             } else {
                 btnTopo.classList.remove('visible');
+            }
+        });
+    </script>
+
+    <!-- Script para Alternar a Exibição dos Detalhes do Projeto -->
+    <script>
+        const btnVerMais = document.querySelector('.btn-ver-mais');
+        const detalhesProjeto = document.getElementById('detalhes-mygreen');
+
+        btnVerMais.addEventListener('click', () => {
+            if (detalhesProjeto.classList.contains('visible')) {
+                detalhesProjeto.classList.remove('visible'); // Oculta a seção
+            } else {
+                detalhesProjeto.classList.add('visible'); // Exibe a seção
             }
         });
     </script>
