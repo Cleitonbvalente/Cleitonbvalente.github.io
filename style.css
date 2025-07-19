@@ -80,7 +80,7 @@ header a:hover {
 
 header nav.menu-desktop ul {
     display: flex;
-    gap: 20px;
+    gap: 12px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -88,7 +88,7 @@ header nav.menu-desktop ul {
 
 header nav.menu-desktop ul li {
     display: inline-block;
-    padding: 0 24px;
+    padding: 0 12px;
 }
 
 /* Alterações no Menu de Navegação */
@@ -245,6 +245,81 @@ section.sobre .btn-contato {
     margin-top: 30px;
 }
 
+/* ESTILO DA SEÇÃO EXPERIÊNCIAS */
+section.experiencias {
+    padding: 40px 4%;
+    background-color: #111;
+}
+
+.experiencia-box {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiencia-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(36, 177, 165, 0.2);
+}
+
+.experiencia-icon {
+    font-size: 40px;
+    color: var(--cor-primaria);
+    margin-top: 5px;
+}
+
+.experiencia-content {
+    flex: 1;
+}
+
+.experiencia-content h3 {
+    color: var(--cor-secundaria);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.experiencia-local {
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.experiencia-periodo {
+    color: #a0a0a0;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.experiencia-descricao {
+    padding-left: 20px;
+    color: #d0d0d0;
+    line-height: 1.6;
+}
+
+.experiencia-descricao li {
+    margin-bottom: 8px;
+}
+
+.experiencia-descricao strong {
+    color: var(--cor-primaria);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .experiencia-box {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .experiencia-icon {
+        text-align: center;
+    }
+}
+
 /* ESTILO DA SEÇÃO FORMAÇÃO */
 section.formacao {
     padding: 40px 4%;
@@ -378,6 +453,20 @@ section.projetos .flex {
 .projeto-box .btn-projeto button:hover {
     background-color: var(--cor-destaque);
     transform: scale(1.05);
+}
+
+/* ESTILO PARA VÍDEO EM PROJETOS */
+.video-projeto {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.video-projeto video {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background-color: #000;
 }
 
 /* ESTILO DA SEÇÃO DE CONTATO */
