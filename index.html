@@ -12,6 +12,7 @@
     <meta property="og:description" content="Estudante de Ciência da Computação e apaixonado por tecnologia.">
     <meta property="og:image" content="https://raw.githubusercontent.com/Cleitonbvalente/Portfolio/main/Design%20sem%20nome.png">
     <meta property="og:url" content="https://cleitonbvalente.github.io/Portfolio/">
+    <meta property="og:type" content="website">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon-32x32.png">
     <!-- GOOGLE FONTS -->
@@ -24,6 +25,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfólio de Cleiton</title>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5ETFXZLJXB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5ETFXZLJXB');
+</script>
 <body>
     <!-- CABEÇALHO -->
     <header>
@@ -32,13 +42,14 @@
                 <a href="#">
                     <img src="Nome.png" alt="Logotipo do Portfólio de Cleiton" width="150px">
                 </a>
-            </div> <!--logo-->
+            </div>
 
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="#">Início</a></li>
                     <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#experiencias">Experiências</a></li>
                     <li><a href="#formacao">Formação</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#contato">Contato</a></li>
@@ -69,11 +80,11 @@
                             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" title="C">
                             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" title="Python">
                             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="Swift" title="Swift">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML" title="HTML">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS" title="CSS">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
                             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="SQL" title="SQL">
                             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/r/r-original.svg" alt="R" title="R">
+                            <img src="https://raw.githubusercontent.com/microsoft/PowerBI-Icons/main/SVG/Power-BI.svg" alt="Power BI" title="Power BI" style="filter: invert(1);">
+                            <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" alt="Tableau" title="Tableau" style="filter: brightness(0) invert(1);">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" title="Java">
                         </div>
 
                         <!-- Botão "Entre em contato" -->
@@ -82,14 +93,14 @@
                                 <button aria-label="Entre em contato">Entre em contato</button>
                             </a>
                         </div>
-                    </div><!--txt-topo-site-->
+                    </div>
 
                     <div class="img-topo-site">
                         <img src="Design sem nome.png" alt="Ilustração de Cleiton, Estudante em Ciência da Computação" width="400px">
-                    </div><!--img-topo-site-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--topo-do-site-->
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- ESPECIALIDADES -->
         <section id="especialidades" class="especialidades">
@@ -100,30 +111,30 @@
                         <i class="bi bi-graph-up-arrow"></i>
                         <h3>Análise de Dados</h3>
                         <p>A Análise de Dados é um campo essencial e dinâmico que envolve a exploração, interpretação e extração de insights significativos a partir de conjuntos de dados.</p>
-                    </div><!--especialidades-box-->
+                    </div>
 
                     <div class="especialidades-box">
                         <i class="bi bi-laptop"></i>
                         <h3>Suporte técnico em TI</h3>
                         <p>O suporte técnico em Tecnologia da Informação (TI) desempenha um papel fundamental na garantia do funcionamento eficiente e contínuo dos sistemas e equipamentos tecnológicos nas organizações.</p>
-                    </div><!--especialidades-box-->
+                    </div>
 
                     <div class="especialidades-box">
                         <i class="bi bi-palette"></i>
                         <h3>Design UX</h3>
                         <p>O Design UX (User Experience) foca na criação de experiências significativas e intuitivas para os usuários, garantindo que os produtos sejam funcionais, acessíveis e agradáveis de usar.</p>
-                    </div><!--especialidades-box-->
-                </div><!--flex-->
+                    </div>
+                </div>
 
                 <div class="flex">
                     <div class="especialidades-box">
                         <i class="bi bi-kanban"></i>
                         <h3>Gerenciamento de Projetos</h3>
                         <p>O Gerenciamento de Projetos envolve planejamento, execução e monitoramento de projetos, garantindo que sejam entregues no prazo, dentro do orçamento e com qualidade.</p>
-                    </div><!--especialidades-box-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--especialidades-->
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- SOBRE MIM -->
         <section id="sobre" class="sobre">
@@ -132,7 +143,7 @@
                 <div class="flex">
                     <div class="txt-sobre">
                         <p class="primeiro-paragrafo">
-                            Olá! Meu nome é <strong>Cleiton Barbosa Valente</strong>, tenho <strong>22 anos</strong>, sou natural de <strong>Aracati/CE</strong> e atualmente estudo <strong>Ciência da Computação</strong> no Instituto Federal do Ceará (IFCE). Sou um apaixonado por tecnologia e, desde cedo, me encantei pela capacidade de transformar desafios em soluções inovadoras. Hoje, busco aplicar meus conhecimentos para criar impactos positivos na sociedade.
+                            Olá! Meu nome é <strong>Cleiton Barbosa Valente</strong>, tenho <strong>23 anos</strong>, sou natural de <strong>Aracati/CE</strong> e atualmente estudo <strong>Ciência da Computação</strong> no Instituto Federal do Ceará (IFCE). Sou um apaixonado por tecnologia e, desde cedo, me encantei pela capacidade de transformar desafios em soluções inovadoras. Hoje, busco aplicar meus conhecimentos para criar impactos positivos na sociedade.
                         </p>
                         <p>
                             Minha jornada na tecnologia começou com o curso técnico em <strong>Petroquímica</strong>, onde desenvolvi habilidades essenciais como resolução de problemas e trabalho em equipe. No entanto, foi ao explorar cursos como <strong>Suporte Técnico em TI</strong>, <strong>Análise de Dados</strong>, <strong>Design UX</strong> e <strong>Gerenciamento de Projetos</strong> que descobri minha verdadeira paixão: a tecnologia. Essas experiências me mostraram o poder de unir criatividade, análise e estratégia para criar soluções que fazem a diferença.
@@ -151,14 +162,57 @@
                                 <button aria-label="Entre em contato">Entre em contato</button>
                             </a>
                         </div>
-                    </div><!--txt-sobre-->
+                    </div>
 
                     <div class="img-sobre">
                         <img src="IMG-20220207-WA0047.jpg" alt="Foto de Cleiton Barbosa Valente">
-                    </div><!--img-sobre-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--sobre-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIÊNCIAS -->
+        <section id="experiencias" class="experiencias">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>EXPERIÊNCIAS.</span></h2>
+
+                <!-- Experiência 1 -->
+                <div class="experiencia-box">
+                    <div class="experiencia-icon">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                    <div class="experiencia-content">
+                        <h3>Bolsista – Residência em TIC – Programação iOS</h3>
+                        <p class="experiencia-local">Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE)</p>
+                        <p class="experiencia-periodo">Aracati/CE – Abr. 2025 – Atual</p>
+                        <ul class="experiencia-descricao">
+                            <li>Participação em curso intensivo de desenvolvimento iOS com foco em Swift e Xcode.</li>
+                            <li>Desenvolvimento do aplicativo <strong>MyGreen</strong>, voltado para o cuidado de plantas.</li>
+                            <li>Atuação com versionamento de código, lógica de programação e arquitetura de apps móveis.</li>
+                            <li>Mentorias técnicas e bolsa de incentivo à prática profissional.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experiência 2 -->
+                <div class="experiencia-box">
+                    <div class="experiencia-icon">
+                        <i class="bi bi-robot"></i>
+                    </div>
+                    <div class="experiencia-content">
+                        <h3>Bolsista – Projeto "Apoio ao Ensino de Robótica Educacional"</h3>
+                        <p class="experiencia-local">Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE) – Campus Aracati</p>
+                        <p class="experiencia-periodo">Aracati/CE – Jun. 2025 – Atual</p>
+                        <ul class="experiencia-descricao">
+                            <li>Apoio ao ensino de robótica para alunos do ensino fundamental.</li>
+                            <li>Utilização de kits LEGO, Arduino e tecnologias de laboratório maker.</li>
+                            <li>Atuação em oficinas práticas, montagem de circuitos e projetos interativos.</li>
+                            <li>Fomento ao pensamento computacional e à aprendizagem por experimentação.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- FORMAÇÃO -->
         <section id="formacao" class="formacao">
@@ -186,8 +240,8 @@
                             <p>2018 – 2022</p>
                             <p>Concluído</p>
                         </div>
-                    </div><!--flex-->
-                </div><!--formacao-categoria-->
+                    </div>
+                </div>
 
                 <!-- Cursos e Certificações -->
                 <div class="formacao-categoria">
@@ -224,10 +278,10 @@
                             <p><strong>Google</strong></p>
                             <p>2023</p>
                         </div>
-                    </div><!--flex-->
-                </div><!--formacao-categoria-->
-            </div><!--interface-->
-        </section><!--formacao-->
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- PROJETOS -->
         <section id="projetos" class="projetos">
@@ -254,9 +308,33 @@
                                 <button class="btn-ver-mais" aria-label="Ver mais sobre o projeto MyGreen">Ver mais</button>
                             </div>
                         </div>
-                    </div><!--projeto-box-->
+                    </div>
 
-                    <!-- Detalhes do Projeto MyGreen (inicialmente oculto) -->
+                    <!-- Projeto ReservaGinásio -->
+                    <div class="projeto-box">
+                        <div class="video-projeto">
+                            <video controls>
+                                <source src="Reserva Ginásio Oficial.mp4" type="video/mp4">
+                                Seu navegador não suporta a reprodução de vídeo.
+                            </video>
+                        </div>
+                        <div class="txt-projeto">
+                            <h3>ReservaGinásio</h3>
+                            <p>
+                                Sistema desktop desenvolvido em <strong>Java</strong> com interface <strong>JavaFX</strong> para reservas de horários em um ginásio esportivo. Permite adicionar, editar, buscar e excluir reservas com base em data, horário, esporte e nome da pessoa.
+                            </p>
+                            <p>
+                                <strong>Tecnologias utilizadas:</strong> Java, JavaFX, SceneBuilder, SQLite, IntelliJ IDEA.
+                            </p>
+                            <div class="btn-repositorio">
+                            <a href="https://github.com/Cleitonbvalente/ReservaGinasio" target="_blank" rel="noopener noreferrer">
+                                <button aria-label="Ver repositório no GitHub">Ver repositório</button>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Detalhes do Projeto MyGreen -->
                     <div class="detalhes-projeto" id="detalhes-mygreen">
                         <h3>Telas do MyGreen</h3>
                         <div class="galeria-telas">
@@ -294,10 +372,10 @@
                                 <button aria-label="Ver repositório no GitHub">Ver repositório</button>
                             </a>
                         </div>
-                    </div><!--detalhes-projeto-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--projetos-->
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- SEÇÃO DE CONTATO -->
         <section id="contato" class="contato">
@@ -335,10 +413,10 @@
                                 </a>
                             </li>
                         </ul>
-                    </div><!--contato-info-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--contato-->
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Botão "Voltar ao Topo" -->
@@ -365,9 +443,9 @@
 
         btnVerMais.addEventListener('click', () => {
             if (detalhesProjeto.classList.contains('visible')) {
-                detalhesProjeto.classList.remove('visible'); // Oculta a seção
+                detalhesProjeto.classList.remove('visible');
             } else {
-                detalhesProjeto.classList.add('visible'); // Exibe a seção
+                detalhesProjeto.classList.add('visible');
             }
         });
     </script>
