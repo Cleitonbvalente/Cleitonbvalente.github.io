@@ -457,7 +457,7 @@ section.projetos .flex {
 
 /* ESTILO PARA VÍDEO EM PROJETOS */
 .video-projeto {
-    width: 10px;
+    width: 100%;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -695,4 +695,3 @@ section.contato h2.titulo {
         width: 45%; /* Aumenta o tamanho das imagens para 45% em telas muito pequenas */
     }
 }
-
